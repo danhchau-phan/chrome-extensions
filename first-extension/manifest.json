@@ -6,28 +6,23 @@
         "bookmarks",
         "activeTab"
     ],
+    "web_accessible_resources": ["/images/icon.png"],
     "background": {
         "service_worker": "background.js"
     },
     "content_scripts": [
         {
-            "matches":["https://www.google.com.vn/search?*"],
+            "matches":["https://www.google.com/search?*"],
             "js": ["content/content.js"]
         }
     ],
     "action" : {
         "default_title" : "Bookmark checker",
         "default_icons": {
-            "16": "/images/icon.png",
-            "32": "/images/icon.png",
-            "48": "/images/icon.png",
             "128": "/images/icon.png"
           }
       },
     "icons": {
-        "16": "/images/icon.png",
-        "32": "/images/icon.png",
-        "48": "/images/icon.png",
         "128": "/images/icon.png"
       }
 }
