@@ -1,6 +1,7 @@
 async function mark(element) {
     var img = document.createElement("img");
     img.src = await chrome.runtime.getURL("/images/icon.png");
+    img.style = "height:5%; width:5%";
     element.getElementsByTagName("h3")[0].appendChild(img);
 }
 
