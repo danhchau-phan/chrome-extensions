@@ -6,7 +6,12 @@
         "bookmarks",
         "activeTab"
     ],
-    "web_accessible_resources": ["/images/icon.png"],
+    "web_accessible_resources": [
+        { 
+        "resources": ["/images/icon.png"],
+        "matches": []
+        }
+    ],
     "background": {
         "service_worker": "background.js"
     },

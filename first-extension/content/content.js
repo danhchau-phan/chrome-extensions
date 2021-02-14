@@ -1,6 +1,6 @@
 async function mark(element) {
     var img = document.createElement("img");
-    // img.src = await chrome.runtime.getURL("images/icon.png");
+    img.src = await chrome.runtime.getURL("/images/icon.png");
     element.getElementsByTagName("h3")[0].appendChild(img);
 }
 
